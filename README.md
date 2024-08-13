@@ -1,5 +1,5 @@
 # f24 
-{% octicon "mortar-board"%}
+{% octicon "plus" %}
 
 This repository is the home for all of the work I need cross-platform for the Fall 2024 semester at SIUC.
 
