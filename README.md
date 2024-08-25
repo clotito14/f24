@@ -1,4 +1,4 @@
-# f24 
+# f24
 
 This repository is the home for all of the work I need cross-platform for the Fall 2024 semester at SIUC.
 
@@ -19,7 +19,7 @@ Total Credits: 16 hrs
 
 ---
 
-## Semester Goals 
+## Semester Goals
 
 I want to maximize my time learning; as it is my final year, there are a bounty of subjects that I need to dig my teeth into.
 
@@ -29,7 +29,7 @@ I want to learn how to bridge the gap between the analog and digital world. Hope
 
 ### Course Descriptions
 
-_These course descriptions were found in the [SIUC course catalog](https://catalog.siu.edu/index.pdf)._ 
+_These course descriptions were found in the [SIUC course catalog](https://catalog.siu.edu/index.pdf)._
 
 | Course | Description |
 | :------: | :----------- |
