@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1724632252.74661 "basic-notes.tex" "basic-notes.pdf" "basic-notes" 1724632253.13768 2
+["pdflatex"] 1724710850.93558 "basic-notes.tex" "basic-notes.pdf" "basic-notes" 1724710851.33522 2
   "C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1724632248 122695 284aa43fd9596bfdbe93b5e0c6c5df4b ""
   "C:/Users/cloti/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724468771 24265333 b73f5dda8cba248e4c654006105b19f2 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -55,8 +55,8 @@
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty" 1722584446 6565 7e70b0b6215591329b4c82651584e425 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xparse.sty" 1716378382 9327 090c6c81eff433de1562ec6a5b1b31ee ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/physics/physics.sty" 1356002062 29610 a9597219b282d9c78b02393dcd7d4322 ""
-  "basic-notes.aux" 1724632253 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "basic-notes.tex" 1724632252 1203 b6b4ff59de92ee88fea6dfbb40ed1e95 ""
+  "basic-notes.aux" 1724710851 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "basic-notes.tex" 1724710849 1529 c9cab5d423c6b56cee3cbfc9a5ad2b88 ""
   (generated)
   "basic-notes.aux"
   "basic-notes.log"
