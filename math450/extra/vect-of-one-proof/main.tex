@@ -1,10 +1,11 @@
 \documentclass{article}
 
-\usepackage[letterpaper, tmargin=0in]{geometry}
+\usepackage[letterpaper, tmargin=1in]{geometry}
+\usepackage{physics}
 \usepackage{amsmath, amsfonts, amsthm}
 \usepackage{enumerate}
 
-\title{Proof of \(v_p(1) = 0\).}
+\title{Proof of \(\vb v_p(1) = 0\).}
 \author{Chase A. Lotito}
 
 \begin{document}
@@ -16,21 +17,21 @@
 A (tangent) vector at a point \(p \in M\), where \(M\) is a smooth manifold, is an operator:
 
 \begin{equation*}
-    v_p : \mathcal{F}M \to \mathbb{R}
+    \vb v_p : \mathcal{F}M \to \mathbb{R}
 \end{equation*}
 
 \noindent
-Our vector \(v_p\), the operator, takes a smooth function (which itself maps our manifold to a scalar quantity) and provides a real number, given these conditions are satisfied:
+Our vector \(\vb v_p\), the operator, takes a smooth function (which itself maps our manifold to a scalar quantity) and provides a real number, given these conditions are satisfied:
 
 \begin{enumerate}[i.]
-    \item \( v_p (f + g) = v_p(f) + v_p(g) \)
-    \item \( v_p (cf) = c (v_p(f)), ~~~ c \in \mathbb{R} \)
-    \item \( v_p(fg) = v_p(f)g(p) + f(p)v_p(g) \)
+    \item \( \vb v_p (f + g) = \vb v_p(f) + \vb v_p(g) \)
+    \item \( \vb v_p (cf) = c (\vb v_p(f)), ~~~ c \in \mathbb{R} \)
+    \item \( \vb v_p(fg) = \vb v_p(f)g(p) + f(p)\vb v_p(g) \)
 \end{enumerate}
 
-\section{Proof of why \(v_p(1) = 0\)}
+\section{Proof of why \(\vb v_p(1) = 0\)}
 
-From the definition of the vector, we see that it acts like a derivative. Both operate on functions and provide a scalar quantity in return. From derivatives, we know that:
+From the definition of the vector, we see that it acts like a derivative. Both derivatives and vectors operate on functions and provide a scalar quantity in return. From derivatives, we know that:
 
 \begin{equation*}
     \frac{d}{dx}(1) = 0
@@ -38,48 +39,77 @@ From the definition of the vector, we see that it acts like a derivative. Both o
 \end{equation*}
 
 \noindent
-Can we prove then, that the (tangent) vector operating on unity is also nothing, i.e. \(v_p(1) = 0\)?
+Can we prove then, that the (tangent) vector operating on unity is also zero?
 
 \begin{proof}[Proof]
 
-Let our tangent vector \(v_p\) act on the following smooth function from \(\mathcal{F}M\):
-
-\begin{equation*}
-    f = x^0 + c^1 x^1 + c^2 x^2 + \cdots + c^n x^n, ~~~ c^i \in \mathbb{R}
-\end{equation*}
-
-\noindent
-From \(f\), the first term \(x^0 \in \mathbb{R}\). If we take \(f+1\), then we'd have:
-
-\begin{equation*}
-    f = 1 + x^0 + c^1 x^1 + c^2 x^2 + \cdots + c^n x^n, ~~~ c^i \in \mathbb{R}
-\end{equation*}
-
-\noindent
-But, \(1+x^0 \in \mathbb{R}\), so really, the constant can be absorbed into the \(0^{\text{th}}\)-order term.
+    Given a (tangent) vector \(\vb v_p\), let's apply the \textit{Leibniz rule} as it operates on \(1 \in \mathcal{F}M\):
 
 \begin{equation}
-    \implies f + 1 = f
-    \label{eq:fabsorbsone}
+    \vb v_p(1) = \vb v_p(1 \cdot 1) \overset{\text{\tiny{(iii)}}}{=} \vb v_p(1) \cdot 1 + 1 \cdot \vb v_p(1) = \vb v_p(1) + \vb v_p(1)
+    \label{eq:starteq}
 \end{equation}
 
 \noindent
-So, given \(v_p(f+1)\), by (i):
-
-\begin{equation}
-    v_p(f + 1) = v_p(f) + v_p(1)
-    \label{eq:vpsplit}
-\end{equation}
-
-\noindent
-Now, using Eq. \ref{eq:fabsorbsone} and Eq. \ref{eq:vpsplit}:
+Rearranging (\ref{eq:starteq}):
 
 \begin{align*}
-    v_p(f+1) &= v_p(f) \\
-    \implies v_p(f) + v_p(1) &= v_p(f) \\
-    \implies v_p(1) &= v_p(f) - v_p(f) = 0
+    \vb v_p(1) - \vb v_p(1) = \vb v_p(1) \\
+    \leadsto \vb v_p(1) = 0
 \end{align*}
 
 \end{proof}
 
+\noindent
+Given Condition (ii), \(\vb v_p(1) = 0\) generalizes \(\forall c \in \mathbb{R}\):
+
+\begin{equation*}
+    \vb v_p(c) = \vb v_p(c \cdot 1) = c(\vb v_p(1)) = c \cdot 0 = 0
+\end{equation*}
+
+%\begin{proof}[Proof]
+%
+%Let our tangent vector \(v_p\) act on the following smooth function from \(\mathcal{F}M\):
+%
+%\begin{equation*}
+%    f = x^0 + c^1 x^1 + c^2 x^2 + \cdots + c^n x^n, ~~~ c^i \in \mathbb{R}
+%\end{equation*}
+%
+%\noindent
+%From \(f\), the first term \(x^0 \in \mathbb{R}\). If we take \(f+1\), then we'd have:
+%
+%\begin{equation*}
+%    f = 1 + x^0 + c^1 x^1 + c^2 x^2 + \cdots + c^n x^n, ~~~ c^i \in \mathbb{R}
+%\end{equation*}
+%
+%\noindent
+%But, \(1+x^0 \in \mathbb{R}\), so really, the constant can be absorbed into the \(0^{\text{th}}\)-order term.
+%
+%\begin{equation}
+%    \leadsto f + 1 = f
+%    \label{eq:fabsorbsone}
+%\end{equation}
+%
+%\noindent
+%So, given \(v_p(f+1)\), by (i):
+%
+%\begin{equation}
+%    v_p(f + 1) = v_p(f) + v_p(1)
+%    \label{eq:vpsplit}
+%\end{equation}
+%
+%\noindent
+%Now, using Eq. \ref{eq:fabsorbsone} and Eq. \ref{eq:vpsplit}:
+%
+%\begin{align*}
+%    & v_p(f+1) = v_p(f) \\
+%    \leadsto ~~ & v_p(f) + v_p(1) = v_p(f) \\
+%    \leadsto ~~ & v_p(1) = v_p(f) - v_p(f) = 0
+%\end{align*}
+%
+%\noindent
+%Notice, this applies for all constants \(a \in \mathbb{R}\), just factor out \(a\) using (ii).
+%
+%\end{proof}
+%
 \end{document}
