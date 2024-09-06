@@ -5,6 +5,8 @@
 \usepackage{amsmath, amsfonts, amsthm}
 \usepackage{enumerate}
 
+\newtheorem{definition}{Def}
+
 \title{Proof of \(\vb v_p(1) = 0\).}
 \author{Chase A. Lotito}
 
@@ -12,7 +14,9 @@
 
 \maketitle{}
 
-\section{Definiton of a (tangent) vector.}
+\section{Definiton of a (tangent) vector}
+
+\begin{definition}
 
 A (tangent) vector at a point \(p \in M\), where \(M\) is a smooth manifold, is an operator:
 
@@ -28,6 +32,9 @@ Our vector \(\vb v_p\), the operator, takes a smooth function (which itself maps
     \item \( \vb v_p (cf) = c (\vb v_p(f)), ~~~ c \in \mathbb{R} \)
     \item \( \vb v_p(fg) = \vb v_p(f)g(p) + f(p)\vb v_p(g) \)
 \end{enumerate}
+
+\end{definition}
+
 
 \section{Proof of why \(\vb v_p(1) = 0\)}
 

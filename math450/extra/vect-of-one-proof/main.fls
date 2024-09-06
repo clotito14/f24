@@ -85,6 +85,7 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
@@ -98,7 +99,6 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tf
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 OUTPUT main.pdf
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT main.aux
