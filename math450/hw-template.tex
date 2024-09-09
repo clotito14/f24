@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}			% Use this package to include images
+\usepackage{amsmath}			% A library of many standard math expressions
+\usepackage[margin=1in]{geometry}% Sets 1in margins.
+\usepackage{fancyhdr}			% Creates headers and footers
+\usepackage{enumerate}          %These two package give custom labels to a list
+\usepackage[shortlabels]{enumitem}
+
+
+% Creates the header and footer. You can adjust the look and feel of these here.
+\pagestyle{fancy}
+\fancyhead[l]{Chase A. Lotito}
+\fancyhead[c]{MATH450 Homework \#1}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt} %Creates a horizontal line underneath the header
+\setlength{\headheight}{15pt} %Sets enough space for the header
+
+
+
+\begin{document} %The writing for your homework should all come after this.
+
+\noindent
+You can modify the code in this template to make your first homework in LaTeX. You can put any \textit{initial text} in this section.
+
+
+%Enumerate starts a list of problems so you can put each homework problem after each item.
+\begin{enumerate}[start=1,label={\bfseries Question \arabic*:},leftmargin=1in] %You can change "Problem" to be whatevber label you like.
+    \item This problem contains an equation in display mode. The definition of the Riemann Integral is
+
+    \[ \int_a^bf(x)dx=\lim_{||P||\rightarrow 0}\sum_{k=1}^nf(x_k^*)\Delta x_k\]
+
+    Alternatively you can use $f(x)$ to write an equation in the middle of a sentence.
+\end{enumerate}
+
+\end{document}
