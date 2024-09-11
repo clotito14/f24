@@ -22,5 +22,6 @@ print(raw_data_array[0][9])
 
 # from here we need to ordinal encode oceanview
 ord_enc = preprocessing.OrdinalEncoder().fit(raw_data_array)
+print(ord_enc.categories_)
 enc_data_array = ord_enc.transform(raw_data_array)
 print(enc_data_array)
