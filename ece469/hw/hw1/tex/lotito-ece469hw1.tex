@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}			% Use this package to include images
+\usepackage{amsmath}			% A library of many standard math expressions
+\usepackage{amsfonts}
+\usepackage[margin=1in]{geometry}% Sets 1in margins.
+\usepackage{fancyhdr}			% Creates headers and footers
+\usepackage{enumerate}          %These two package give custom labels to a list
+\usepackage[shortlabels]{enumitem}
+\usepackage{braket}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{url}
+\pgfplotsset{compat=1.18}
+
+% Creates the header and footer. You can adjust the look and feel of these here.
+\pagestyle{fancy}
+\fancyhead[l]{Chase A. Lotito}
+\fancyhead[c]{ECE469 Homework \#1}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt} %Creates a horizontal line underneath the header
+\setlength{\headheight}{15pt} %Sets enough space for the header
+
+
+
+\begin{document} %The writing for your homework should all come after this.
+
+%Enumerate starts a list of problems so you can put each homework problem after each item.
+\begin{enumerate}[start=1,label={\bfseries Question \arabic*:},leftmargin=1in] %You can change "Problem" to be whatevber label you like.
+
+    \item Select ALL correct choices.
+
+    \item A linear ML model can be written as: \[f(\vb{x}, \vb{w}) = \sum_{i=0}^n w_i x_i = \vb{w}^T \vb{x}\] The loss function can be written as: \[ J(\vb{w}) = \frac{1}{m} \sum_{i=1}^n \left[ f(\vb{x}^{(i)}, \vb{w}) - y^{(i)} \right]^2 \]
+
+        \textbf{[2.1]} Show analytically that the optimal weight vector that minimizes the cost function \(J(\vb{w})\) is: \[\vb{w}^* = \left( \vb{X}^T\vb{X}  \right)^{-1} \vb{X}^T\vb{y} \]
+
+        \noindent \textbf{Solution.}
+
+        \noindent Since our model is linear, we can write the cost function as:
+
+        \begin{equation}
+            J(\vb{w}) = \frac{1}{m} \sum_{i=1}^n \left[ \vb{w}^T \vb{x}^{(i)} - y^{(i)} \right]^2
+            \label{eq:linear-cost-vectors}
+        \end{equation}
+
+        The product \(\vb{w}^T \vb{x}^{(i)} = \vb{Xw}, \forall i \in \set{1, 2, \cdots, n}\) since the LHS implies the matrix mulplitcation of the RHS, as \(\vb{X}\) is the matrix of all input entries \(\vb{x}^{(i)}\). So, Eq. \ref{eq:linear-cost-vectors} can be written as:
+
+        \begin{equation}
+            J(\vb{w}) = \frac{1}{m} \left[ \vb{Xw}  - \vb{y} \right]^2
+            \label{eq:linear-cost-sum-matrix}
+        \end{equation}
+
+        The inside of the brackets is just a vector, and the square of a vector is the norm of a vector, so we can reduce Eq. \ref{eq:linear-cost-sum-matrix}:
+
+        \begin{align}
+            J(\vb{w}) &= \frac{1}{m} \norm{ \vb{Xw} - \vb{y}  } \\
+                      &= \frac{1}{m} (\vb{Xw} - \vb{y})^T(\vb{Xw} - \vb{y}) \\
+                      &= \frac{1}{m} ( \vb{w}^T\vb{X}^T\vb{Xw} - \vb{w}^T\vb{X}^T\vb{y} - \vb{y}^T \vb{Xw} + \vb{y}^T\vb{y} )
+        \end{align}
+
+        Now to optimize the cost with respect to weights, we can take the gradient of \(J(\vb{w})\) w.r.t. the weights \(\vb{w}^{(i)}\).
+
+        \begin{align}
+            \nabla_{\vb{w}} J(\vb{w}) &= \frac{1}{m} \nabla_{\vb{w}} (  \vb{w}^T\vb{X}^T\vb{Xw} - \vb{w}^T\vb{X}^T\vb{y} - \vb{y}^T \vb{Xw} + \vb{y}^T\vb{y} ) \\
+                                      &= \frac{1}{m} \nabla_{\vb{w}} (  \vb{w}^T\vb{X}^T\vb{Xw} - \vb{w}^T\vb{X}^T\vb{y} - \vb{y}^T \vb{Xw}  ) \\
+                                      &= \frac{1}{m} [ \nabla_{\vb{w}} (  \vb{w}^T\vb{X}^T\vb{Xw } ) - \nabla_{\vb{w}} ( \vb{w}^T\vb{X}^T\vb{y} ) - \nabla_{\vb{w}} ( \vb{y}^T \vb{Xw}  ) ) ]
+        \end{align}
+
+        The gradients \(\nabla_{\vb{w}}\) are simply derivatives of each matrix function w.r.t. \(\vb{w}\), which can be computed using equations (69) and (81) from \emph{The Matrix Cookbook} \cite{matrixcookbook}.
+
+        \begin{align}
+            &= \frac{1}{m} \left[ \pdv{\vb{w}} (  \vb{w}^T\vb{X}^T\vb{Xw } ) - \pdv{\vb{w}} ( \vb{w}^T\vb{X}^T\vb{y} ) - \pdv{\vb{w}} ( \vb{y}^T \vb{Xw}  ) ) \right] \\
+            &= \frac{1}{m} ( (\vb{X}^T\vb{X} + ( \vb{X}^T\vb{X} )^T )\vb{w} - \vb{X}^T\vb{y} - \vb{y}^T\vb{X} ) \\
+            &= \frac{1}{m} ( (\vb{X}^T\vb{X} + \vb{X}^T ( \vb{X}^T )^T )\vb{w} - 2\vb{X}^T\vb{y} ) \\
+            &= \frac{1}{m} ( (\vb{X}^T\vb{X} + \vb{X}^T\vb{X})\vb{w} - 2\vb{X}^T\vb{y} ) \\
+            &= \frac{1}{m} (2\vb{X}^T\vb{X}\vb{w} - 2\vb{X}^T\vb{y} ) \\
+            &= \frac{2}{m} (\vb{X}^T\vb{X}\vb{w} - \vb{X}^T\vb{y} )
+        \end{align}
+
+        We find the minimum when \(\nabla_{\vb{w}} J (\vb{w}) = 0\),
+
+        \begin{align}
+            \frac{2}{m} (\vb{X}^T\vb{X}\vb{w} - \vb{X}^T\vb{y} ) &= 0 \\
+            \vb{X}^T\vb{X}\vb{w} - \vb{X}^T\vb{y} &= 0 \\
+            \vb{X}^T\vb{X}\vb{w} &= \vb{X}^T\vb{y} \\
+            (\vb{X}^T\vb{X})^{-1} ( \vb{X}^T\vb{X}\vb{w} ) &= (\vb{X}^T\vb{X})^{-1} ( \vb{X}^T\vb{y}) \\
+            \vb{I}\vb{w} &= (\vb{X}^T\vb{X})^{-1} \vb{X}^T\vb{y} \\
+            \Aboxed{\vb{w} &= (\vb{X}^T\vb{X})^{-1} \vb{X}^T\vb{y} = \vb{w}^*}
+        \end{align}
+
+        Without advanced methods, multipliying two \((n\times n)\) matricies is of \(O(n^3)\) complexity \cite{matrixcompute}. For very large data sets, computing \(\vb{w}\) would be enormously computationally expensive.
+
+\end{enumerate}
+
+% REFERENCES!
+\bibliographystyle{Plain}
+\bibliography{bib.bib}
+
+\end{document}

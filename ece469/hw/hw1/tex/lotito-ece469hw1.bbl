@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{matrixcompute}
+Andy He and Evan Williams.
+\newblock Computational complexity of matrix multiplication.
+\newblock \url{https://www.cs.cornell.edu/courses/cs6810/2023fa/Matrix.pdf},
+  Fall 2023.
+\newblock Accessed: 2024-09-10.
+
+\bibitem{matrixcookbook}
+Kaare~Brandt Petersen and Michael~Syskind Pederson.
+\newblock The matrix cookbook.
+\newblock Distributed by University of Waterloo, November 2012.
+
+\end{thebibliography}
