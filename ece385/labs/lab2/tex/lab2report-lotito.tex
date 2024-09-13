@@ -1,0 +1,106 @@
+\documentclass{IEEEtran}
+
+\hbadness=999999
+
+% Packages
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage[cmintegrals]{newtxmath}
+\usepackage{graphicx}
+\usepackage{xurl} % Makes urls better
+\usepackage{fancyhdr}
+\graphicspath{{./images}}
+
+
+% Title Stuff
+\title{Experiment 2: Single-Phase Transformers}
+\author{Chase Lotito, Blake Jourdan, Noah Holland}
+\date{}
+
+% Begin document
+\begin{document}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhead[L]{ECE385L: Experiment 2 - Single Phase Transformers}
+
+% Make the title
+\maketitle
+
+% ABSTRACT
+\begin{abstract}
+    % [A brief statement on what you plan to do in this project.]
+    The following experiment aquainted us with the single-phase transformer. We observed the transformer while disassembled, noting the geometry of the coil and core. Then, after reassembly, we noted the behavior of the transformer when exciting the primary coil with a sweep of voltages. From this we explain the humming from the transformer, and the results of a open-circuit and short-circuit test.
+\end{abstract}
+
+\section{Transformer Humming}
+
+During the experiment, whenever we applied our AC voltage to the primary coil of the transformer, the transformer made a low-pitch humming noise. So, by exciting the device, some of the electrical energy is spent mechanically vibrating it.
+
+The cause is \emph{magnetostriction}, where changing magnetic fields cause particles in a ferromagnetic material to move and change in size \cite{magnetostriction}. Since the particles are continually being excited by the 60Hz source, we get a vibrating magnetic device.
+
+For a DC source, the frequency is zero, so any ferromagnetic particles will move once and reach an equilibrium, so no continual vibrations can cause humming.
+
+\section{Dislodging the Transformer Yoke}
+
+Before performing the open-circuit test on the transformer, we applied an input voltage while the yoke (top of core) was loosened.
+
+% TODO: Explain the magnetic force on Yoke
+
+% Explain current rising in the same test. Is core reluctance increasing or decreasing as we attempt to remove the yoke.
+
+When we rotate the yoke from its normal position, the cross-sectional area that it makes at the corners of the magnetic core decreases. Remembering the formula for reluctance:
+
+\begin{equation}
+    \mathcal{R} = \frac{l}{\mu A}
+    \label{eq:reluctance}
+\end{equation}
+
+Here it's easy to see that a decreasing cross-sectional area \(A\) causes a increase in core reluctance \(\mathcal{R}\).
+
+We also noted that the source current to the transformer increased when we dislodged the yoke, but this is a direct cause of our increasing core reluctance. From the formula for magnetomotive force (mmf):
+
+\begin{equation}
+    Ni = \Phi \mathcal{R}
+    \label{eq:mmf}
+\end{equation}
+
+Since the coil turns and flux are unchanged, we can see that increasing core reluctance will cause increasing coil current as \(i \propto \mathcal{R}\).
+
+\section{Open-Circuit Test}
+
+% Insert collected data.
+\begin{center}
+\begin{tabular}{ |c|c|c|c| }
+    \hline
+    Source & Source & Source & Secondary Coil \\
+    Voltage (V) & Current (A) & Power (W) & Voltage (V) \\
+    \hline
+    30 & 0.085 & 0.0 & 65.5 \\
+    \hline
+    60 & 0.180 & 1.0 & 133.2 \\
+    \hline
+    90 & 0.290 & 2.1 & 196.7 \\
+    \hline
+    115 & 0.435 & 5.1 & 251.1 \\
+    \hline
+    120 & 0.490 & 6.5 & 261.6 \\
+    \hline
+    125 & 0.500 & 8.3 & 276.5 \\
+    \hline
+\end{tabular}
+\end{center}
+\begin{center}
+\emph{Table 3.1: Open-Circuit Test Data}
+\end{center}
+
+
+
+\section{Short-Circuit Test}
+
+% REFERENCES!
+\bibliographystyle{IEEEtran}
+\bibliography{bib.bib}
+
+\end{document}
