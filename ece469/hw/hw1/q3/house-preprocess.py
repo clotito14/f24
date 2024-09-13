@@ -1,27 +1,47 @@
 # Chase Lotito - SIUC Fall 2024 - ECE469: Intro to Machine Learning
 # HW1 - Question 3
 
-import torch
-import sklearn
-from sklearn import preprocessing
-import keras
+import numpy as np
 import pandas as pd
-import csv
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import OrdinalEncoder
+from sklearn.impute import SimpleImputer
+# (A) Get housing data
+RAW_DATA = 'https://github.com/ageron/data/raw/main/housing/housing.csv'
+housing = pd.read_csv(RAW_DATA)
 
-RAW_DATA = './housing.csv'            # Full, untouched, housing data
-PROCESSED_DATA = './processed.csv'    # Full, processed, housing data
-TRAINING_DATA = './training.csv'      # Training housing data
-TESTING_DATA = './testing.csv'        # Testing housing data
+# (B) Choose input features and output features (saved into numpy.ndarray type)
+X = housing[
+        ['longitude',
+        'latitude',
+        'housing_median_age',
+        'total_rooms',
+        'total_bedrooms',
+        'population',
+        'households',
+        'median_income',
+        'ocean_proximity']
+    ].values
+Y = housing[['median_house_value']].values
 
-# read in the raw data from housing.csv into Pandas Dataframe
-raw_data = pd.read_csv(RAW_DATA)
+print("Raw Version of X")
+print(X)
 
-# convert the Pandas Datarframe to Numpy array
-raw_data_array = raw_data.to_numpy()
-print(raw_data_array[0][9])
+# (C) Ocean Proximity is a categorical feature. Drop it or transform into numerical values (encode).
 
-# from here we need to ordinal encode oceanview
-ord_enc = preprocessing.OrdinalEncoder().fit(raw_data_array)
-print(ord_enc.categories_)
-enc_data_array = ord_enc.transform(raw_data_array)
-print(enc_data_array)
+# Isolate the ocean_proximity data in input data X
+ocean_proximity = X[:,8].reshape(-1,1)   # reshape(-1,1) to make 2D array for Ordinal
+# Initalize the ordinal encoder
+ordinal_encoder = OrdinalEncoder()
+# Encode the ocean_proximity strings into numerical data
+encoded_ocean = ordinal_encoder.fit_transform(ocean_proximity)
+# Put the encoded version of ocean_proximity into input data X
+X[:,8] = encoded_ocean.flatten()         # flatten to add 1D version of array back into X
+
+print("Encoded Version of X:")
+print(X)
+
+# (D) Clean the dasta by either dropping or replacing missing values
+
+# Initialized SimpleImputer
+simple_imputer = SimpleImputer()
