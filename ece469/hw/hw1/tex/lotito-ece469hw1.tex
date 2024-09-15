@@ -55,15 +55,16 @@
 
     \item Select ALL correct choices.
     
-    \textbf{[1.1]}
+    \textbf{[1.1]} Ans: \textbf{B}
 
-    \textbf{[1.2]}
+    \textbf{[1.2]} Ans: \textbf{A}, \textbf{B}
     
-    \textbf{[1.3]}
+    \textbf{[1.3]} Ans: \textbf{A}, \textbf{C}
     
-    \textbf{[1.4]}
+    \textbf{[1.4]} Ans: \textbf{A}, \textbf{B}, \textbf{D}
     
-    \textbf{[1.5]}
+    \textbf{[1.5]} Ans: \textbf{A}, \textbf{B}, \textbf{C}
+
 
     \item A linear ML model can be written as: \[f(\vb{x}, \vb{w}) = \sum_{i=0}^n w_i x_i = \vb{w}^T \vb{x}\] The loss function can be written as: \[ J(\vb{w}) = \frac{1}{m} \sum_{i=1}^n \left[ f(\vb{x}^{(i)}, \vb{w}) - y^{(i)} \right]^2 \]
 
@@ -129,10 +130,62 @@
 
         \textbf{Solution.}
 
+        Batch Gradient Descent
         \begin{lstlisting}
-            
+a = learning rate
+N = size of dataset 
+
+# Psuedocode for Batch Gradient Descent 
+REPEAT UNTIL CONVERGENCE
+{
+for all j:
+    temp_j = w_j - (a / N) * sum( i=1..N, gradient_w(J(x_i, w_j) )
+
+w_j = temp_j
+}
         \end{lstlisting}
         
+        Stochastic Gradient Descent
+        \begin{lstlisting}
+a = learning rate
+
+# Pseudocode for Stochastic Gradient Descent
+REPEAT UNTIL CONVERGENCE
+{
+for all i:
+    w_j = w_j - a * gradient_w(J(x_i, w_j))
+}
+        \end{lstlisting}
+        
+        Mini-Batch Gradient Descent
+        \begin{lstlisting}
+a = learning rate
+b = batch size
+m = rows in training set 
+
+# Psuedocode for Mini-Batch Gradient Descent
+REPEAT UNTIL CONVERGENCE
+{
+# i indexes will be multiples of batch size
+for i = (1*b + 1, 2*b + 1, ... , (m-1)*b + 1):
+    w_j = w_j - (a / b) * sum(k=i..i+(b-1), gradient_w(J(x_k, w_j)))
+}
+        \end{lstlisting}
+
+        \textbf{[2.3]} Discuss the performance versus computational complexity of each of the above algorithms.
+
+        \textbf{Solution.}
+
+        Batch-Gradient Descent (BDG) is the most compuationally complex since the algorithm has to sum over the entire dataset \emph{every single update} of \(w_j\). Stochastic Gradient Descent (SDG) is much faster than BDG since each update of \(w_j\) only looks over a single data row in the \(X\) matrix, instead of all of them. Mini-Batch Gradient Descent (MBDG) is inbetween BDG and SDG in terms of computational complexity, since MBDG updates \(w_j\) after summing the gradients of a specified batch size \(b \in (1, \cdots, N)\).
+        
+        \noindent A ranking of each algorithm from least compuationally complex to least is as follows:
+
+        \begin{enumerate}[label=(\arabic*)]
+            \item Stochastic
+            \item Mini-Batch 
+            \item Batch
+        \end{enumerate}
+
         % Question 3
         \item Housing data preprocessing.
         
