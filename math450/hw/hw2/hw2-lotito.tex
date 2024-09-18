@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage{graphicx}			% Use this package to include images
 \usepackage{amsmath}			% A library of many standard math expressions
@@ -12,6 +12,7 @@
 \usepackage{pgfplots}
 \usepackage{tikz}
 \usepackage{xcolor}
+\usepackage{multicol}
 
 \pgfplotsset{compat=1.18}
 
@@ -31,6 +32,7 @@
 %Enumerate starts a list of problems so you can put each homework problem after each item.
 \begin{enumerate}[start=1,label={\bfseries Exercise \arabic*:},leftmargin=1in] %You can change "Problem" to be whatevber label you like.
 
+    % Question 1
     \item Consider a 2-dimensional manifold \(M\) with coordinate chart \(\set{x,y}\). The following objects are given:
 
         \begin{itemize}
@@ -42,7 +44,8 @@
         \end{itemize}
 
         \noindent Calculate the following:
-        \begin{enumerate}
+        \begin{multicols}{2}
+        \begin{itemize}
             \item \(\vb{v}f\)
             \item \(\vb{A}f\)
             \item \( f \circ c  \)
@@ -51,8 +54,8 @@
             \item \( \dot{\vb{c}} f \)
             \item \( [\vb{A}, \vb{B}]  \)
             \item Draw the vector field \(\vb{B}\) in the neighborhood of \((0,0)\)
-        \end{enumerate}
-
+        \end{itemize}
+        \end{multicols}
         \textbf{Solution.}
 
         \noindent (a)
@@ -92,12 +95,12 @@
 
         \noindent (e) \emph{Remember} \(\dot{\vb{c}} = \dot{c}^i \partial_i = \dot{c}^i(x^i)\partial_i = \dv{(x^i \circ c)(t)}{t} \partial_i\). Operating on a function \(f\), \[\dot{\vb{c}}(f) = \dv{t}\eval_{t_0} f \circ c(t)\]
 
-        \noindent Here,
+        \noindent Here, \(t_0 = 0\),
 
 
         \begin{align*}
               \dot{\vb{c}} &= \dv{(t^2+t)}{t} \partial_x + \dv{(2\cos{t})}{t} \partial_y \\
-                           &= (2t+1)\partial_x - (2\sin{t})\partial_y \eval_{t=0} \\
+                           &= (2t+1)\partial_x - (2\sin{t})\partial_y \eval_{t_0=0} \\
                            &= \partial_x
         \end{align*}
 
@@ -157,17 +160,119 @@
         \end{tikzpicture}
         \end{center}
 
+        
+
+
+
+    % Question 2
+    \bigskip
     \item Consider \(M = \mathbb{R}^3\) with the chart of rectangular coordinates \((x,y,z)\). Express each vector of the basis associated with the chart of spherical coordinates \((r, \varphi, \theta)\), namely \(\set{\partial_r, \partial_{\varphi}, \partial_{\theta}}\) in terms of the standard basis \(\set{\partial_z, \partial_y, \partial_z}\).
 
         \textbf{Solution.}
 
+        The link between Cartesian coordinates and Spherical coordinates is:
+
+        \begin{align*}
+            x &= r \sin{\varphi} \cos{\theta} \\
+            y &= r \sin{\varphi} \sin{\theta} \\
+            z &= r \cos{\varphi}
+        \end{align*} 
+
+        In \(\mathbb{R}^3\), any position on this manifold can be described in the Cartesian basis as: 
+
+        \begin{equation*}
+            x^i \partial_i = x \partial_x + y \partial_y + z \partial_z
+        \end{equation*}
+
+        Substituting \(x^i\) with the Spherical coordinate equivalents:
+
+        \begin{equation*}
+            x^i \partial_i = r \sin{\varphi} \cos{\theta} \partial_x + r \sin{\varphi} \sin{\theta} \partial_y + r \cos{\varphi} \partial_z  
+        \end{equation*}
+
+        From this we can find equations for the Spherical basis vectors via this change of coordinates:
+
+        \begin{equation*}
+            \pdv{y^k} = \pdv{x^i}{y^k} \pdv{x^i} 
+        \end{equation*}
+
+        Where here, \( \pdv{y^1} = \pdv{r} = \partial_r\), and so on:
+
+        For \(\partial_r\):
+
+        \begin{align*}
+            \pdv{y^1} = \pdv{r} = \pdv{x^i}{r} &= \pdv{(r \sin{\varphi} \cos{\theta})}{r} \partial_x + \pdv{(r \sin{\varphi} \sin{\theta})}{r} \partial_y + \pdv{(r \cos{\varphi})}{r} \partial_z \\
+                                               &= \sin{\varphi} \cos{\theta} \partial_x + \sin{\varphi} \sin{\theta} \partial_y + \cos{\varphi} \partial_z
+        \end{align*}
+        
+        For \(\partial_{\varphi}\):
+
+        \begin{align*}
+            \pdv{y^2} = \pdv{\varphi} = \pdv{x^i}{\varphi} &= \pdv{(r \sin{\varphi} \cos{\theta})}{\varphi} \partial_x + \pdv{(r \sin{\varphi} \sin{\theta})}{\varphi} \partial_y + \pdv{(r \cos{\varphi})}{\varphi} \partial_z \\
+                                               &= r \cos{\varphi} \cos{\theta} \partial_x + r \cos{\varphi} \sin{\theta} \partial_y - r \sin{\varphi} \partial_z \\
+                                               &= r ( \cos{\varphi} \cos{\theta} \partial_x + \cos{\varphi} \sin{\theta} \partial_y - \sin{\varphi} \partial_z )
+        \end{align*}
+ 
+ 
+        For \(\partial_{\theta}\):
+
+        \begin{align*}
+            \pdv{y^3} = \pdv{\theta} = \pdv{x^i}{\theta} &= \pdv{(r \sin{\varphi} \cos{\theta})}{\theta} \partial_x + \pdv{(r \sin{\varphi} \sin{\theta})}{\theta} \partial_y + \pdv{(r \cos{\varphi})}{\theta} \partial_z \\
+                                               &= - r \sin{\varphi} \sin{\theta} \partial_x + r \sin{\varphi} \cos{\theta} \partial_y \\
+                                               &= r \sin{\varphi} ( - \sin{\theta} \partial_x + \cos{\theta} \partial_y )
+        \end{align*}
+
+        Removing the greatest common divisor from each, making them unit vectors, we are able to express the Spherical basis vectors as follows:
+
+        \begin{align*}
+                   \partial_r &= \sin{\varphi} \cos{\theta} \partial_x + \sin{\varphi} \sin{\theta} \partial_y + \cos{\varphi} \partial_z \\
+              \partial_{\varphi} &= \cos{\varphi} \cos{\theta} \partial_x + \cos{\varphi} \sin{\theta} \partial_y - \sin{\varphi} \partial_z \\
+            \partial_{\theta} &= - \sin{\theta} \partial_x + \cos{\theta} \partial_y 
+        \end{align*}
+
+
+
+
+
+
+    % Question 3
+    \bigskip
     \item Show that the Lie bracket of vector fields satisfies the Jacobi identity: \[ [A, [B, C]] + [B, [C, A]] + [C, [A, B]] = 0  \]
 
         \textbf{Solution.}
 
+        Remembering that \(A = A^i \partial_i\), \(B = B^i \partial_i\) \& \(C = C^i \partial_i\), let's expand the LHS of the Jacobi identity:
+
+        \begin{align*}
+            = ( A (BC-CB) - (BC-CB)A) &+ ( B (CA-AC) - (CA-AC)B) \\ 
+            &+ ( C (AB-BA) - (AB-BA )C ) \\
+            = ABC - ACB - BCA + CBA + BCA &- BAC \\ 
+            &- CAB + ACB + CAB - CBA - ABC + BAC \\
+            &= 0 
+        \end{align*}
+
+        Beautifully, every term cancels.
+
+
+    % Question 4
+    \bigskip
     \item Let \(C = [A, B]\) be the Lie bracket of two vector fields. In a chart, the vector fields are given as \(A = A^i \partial_i\), \(B = B^i \partial_i\) and \(C = C^i \partial_i\). Express the coefficients \(C^i\) in terms of the coefficients of the other two vector fields.
 
         \textbf{Solution.}
+
+        Calculating \(C\), the Lie bracket of \(A\) and \(B\):
+
+        \begin{align*}
+            C &= [A, B] \\
+              &= A^j \partial_j B^i \partial_i - B^j \partial_j A^i \partial_i \\
+              &= ( A^j \partial_j B^i - B^j \partial_j A^i ) \partial_i \\
+        \end{align*}
+
+        From this, \(C^i = A^j \partial_j B^i - B^j \partial_j A^i \), which can also be expressed:
+
+        \begin{equation*}
+            C^i = A^j \pdv{B^i}{x^j} - B^j \pdv{A^i}{x^j}
+        \end{equation*}
 
 
 \end{enumerate}
