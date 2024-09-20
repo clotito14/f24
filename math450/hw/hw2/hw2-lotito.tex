@@ -119,7 +119,7 @@
 
         \noindent (g) \emph{Remember} the Lie bracket of two vector fields \(\vb{A}\) and \(\vb{B}\) is \[ [\vb{A}, \vb{B}] = \left( A^j(\partial_j B^i) - B^j(\partial_j A^i) \right) \partial_i\]
 
-        \noindent Plugging in our vector fields,
+        \noindent Plugging in our vector fields, \( \vb{A}=2x^2\partial_x  + xy\partial_y \), \( \vb{B} = y\partial_x \),
 
         \begin{align*}
             [\vb{A}, \vb{B}] &= [ A^j ( \partial_j y ) - B^j ( \partial_j 2x^2 ) ]\partial_x + [ A^j ( \partial_j 0 ) - B^j ( \partial_j xy )  ]\partial_y \\
@@ -166,7 +166,7 @@
 
     % Question 2
     \bigskip
-    \item Consider \(M = \mathbb{R}^3\) with the chart of rectangular coordinates \((x,y,z)\). Express each vector of the basis associated with the chart of spherical coordinates \((r, \varphi, \theta)\), namely \(\set{\partial_r, \partial_{\varphi}, \partial_{\theta}}\) in terms of the standard basis \(\set{\partial_x, \partial_y, \partial_z}\).
+    \item Consider \(M \cong \mathbb{R}^3\) with the chart of rectangular coordinates \((x,y,z)\). Express each vector of the basis associated with the chart of spherical coordinates \((r, \varphi, \theta)\), namely \(\set{\partial_r, \partial_{\varphi}, \partial_{\theta}}\) in terms of the standard basis \(\set{\partial_x, \partial_y, \partial_z}\).
 
         \textbf{Solution.}
 
@@ -178,7 +178,7 @@
             z &= r \cos{\varphi}
         \end{align*} 
 
-        In \(\mathbb{R}^3\), any position on this manifold can be described in the Cartesian basis as: 
+        A position vector on this manifold can be described in the Cartesian basis as: 
 
         \begin{equation*}
             x^i \partial_i = x \partial_x + y \partial_y + z \partial_z
@@ -237,17 +237,17 @@
 
     % Question 3
     \bigskip
-    \item Show that the Lie bracket of vector fields satisfies the Jacobi identity: \[ [A, [B, C]] + [B, [C, A]] + [C, [A, B]] = 0  \]
+    \item Show that the Lie bracket of vector fields satisfies the Jacobi identity: \[ [\vb{A}, [\vb{B}, \vb{C}]] + [\vb{B}, [\vb{C}, \vb{A}]] + [\vb{C}, [\vb{A}, \vb{B}]] = 0  \]
 
         \textbf{Solution.}
 
-        Remembering that \(A = A^i \partial_i\), \(B = B^i \partial_i\) \& \(C = C^i \partial_i\), let's expand the LHS of the Jacobi identity:
+        Remembering that \(\vb{A} = A^i \partial_i\), \(\vb{B} = B^i \partial_i\) \& \(\vb{C} = C^i \partial_i\), let's expand the LHS of the Jacobi identity:
 
         \begin{align*}
-            = ( A (BC-CB) - (BC-CB)A) &+ ( B (CA-AC) - (CA-AC)B) \\ 
-            &+ ( C (AB-BA) - (AB-BA )C ) \\
-            = ABC - ACB - BCA + CBA + BCA &- BAC \\ 
-            &- CAB + ACB + CAB - CBA - ABC + BAC \\
+            = ( \vb{A} (\vb{B}\vb{C}-\vb{C}\vb{B}) - (\vb{B}\vb{C}-\vb{C}\vb{B})\vb{A}) &+ ( \vb{B} (\vb{C}\vb{A}-\vb{A}\vb{C}) - (\vb{C}\vb{A}-\vb{A}\vb{C})\vb{B}) \\ 
+            &+ ( \vb{C} (\vb{A}\vb{B}-\vb{B}\vb{A}) - (\vb{A}\vb{B}-\vb{B}\vb{A} )\vb{C} ) \\
+            = \vb{ABC} - \vb{ACB} - \vb{BCA} + \vb{CBA} + \vb{BCA} &- \vb{BAC} \\ 
+            &- \vb{CAB} + \vb{ACB} + \vb{CAB} - \vb{CBA} - \vb{ABC} + \vb{BAC} \\
             &= 0 
         \end{align*}
 
@@ -256,14 +256,14 @@
 
     % Question 4
     \bigskip
-    \item Let \(C = [A, B]\) be the Lie bracket of two vector fields. In a chart, the vector fields are given as \(A = A^i \partial_i\), \(B = B^i \partial_i\) and \(C = C^i \partial_i\). Express the coefficients \(C^i\) in terms of the coefficients of the other two vector fields.
+    \item Let \(\vb{C} = [\vb{A}, \vb{B}]\) be the Lie bracket of two vector fields. In a chart, the vector fields are given as \(\vb{A} = A^i \partial_i\), \(\vb{B} = B^i \partial_i\) and \(\vb{C} = C^i \partial_i\). Express the coefficients \(C^i\) in terms of the coefficients of the other two vector fields.
 
         \textbf{Solution.}
 
-        Calculating \(C\), the Lie bracket of \(A\) and \(B\):
+        Calculating \(\vb{C}\), the Lie bracket of \(\vb{A}\) and \(\vb{B}\):
 
         \begin{align*}
-            C &= [A, B] \\
+            \vb{C} &= [\vb{A}, \vb{B}] \\
               &= A^j \partial_j B^i \partial_i - B^j \partial_j A^i \partial_i \\
               &= ( A^j \partial_j B^i - B^j \partial_j A^i ) \partial_i \\
         \end{align*}
