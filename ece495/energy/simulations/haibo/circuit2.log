@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\cloti\OneDrive\Desktop\SCHOOL\SIUC\f24\ece495\energy\simulations\haibo\circuit2.asc
-Start Time: Thu Sep 19 00:00:53 2024
+Start Time: Tue Sep 24 23:28:32 2024
 solver = Normal
 Maximum thread count: 12
 
@@ -24,5 +24,5 @@ tnom = 27
 temp = 27
 method = modified trap
 .step ton_sw1=8e-06
-Total elapsed time: 40.219 seconds.
+Total elapsed time: 76.798 seconds.
 
