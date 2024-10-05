@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.8)  5 OCT 2024 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.8)  5 OCT 2024 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/hw/hw1/tex/lotito-ece469hw1.tex
-(c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/hw/hw1/tex/lotito-ece469hw1.tex
+**c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/hw/hw2/tex/lotito_ece469hw2.tex
+(c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/hw/hw2/tex/lotito_ece469hw2.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
 (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -457,23 +457,23 @@ File: listings.cfg 2024/05/25 1.10b listings configuration
 Package: listings 2024/05/25 1.10b (Carsten Heinz)
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
-) (lotito-ece469hw1.aux)
-\openout1 = `lotito-ece469hw1.aux'.
+) (lotito_ece469hw2.aux)
+\openout1 = `lotito_ece469hw2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count326
@@ -510,7 +510,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
-* \headheight=15.0pt
+* \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
@@ -527,52 +527,176 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
+ on input line 45.
 
 \c@lstlisting=\count332
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
 (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-[1{C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-
-]
-
-[2]
-
-[3]
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 205.
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 76.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
+[1
+
+{C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+[2]
+
+[3]
+
 [4]
 
-[5] (lotito-ece469hw1.bbl)
+[5]
+<../outputs/q1.png, id=26, 306.39468pt x 230.36063pt>
+File: ../outputs/q1.png Graphic file (type png)
+<use ../outputs/q1.png>
+Package pdftex.def Info: ../outputs/q1.png  used on input line 280.
+(pdftex.def)             Requested size: 234.8775pt x 176.59085pt.
+<../plots/poly_reg_deg1_fold1.png, id=28, 867.24pt x 578.16pt>
+File: ../plots/poly_reg_deg1_fold1.png Graphic file (type png)
+<use ../plots/poly_reg_deg1_fold1.png>
+Package pdftex.def Info: ../plots/poly_reg_deg1_fold1.png  used on input line 287.
+(pdftex.def)             Requested size: 469.75502pt x 313.17216pt.
 
-[6] (lotito-ece469hw1.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../plots/poly_reg_deg2_fold1.png, id=29, 867.24pt x 578.16pt>
+File: ../plots/poly_reg_deg2_fold1.png Graphic file (type png)
+<use ../plots/poly_reg_deg2_fold1.png>
+Package pdftex.def Info: ../plots/poly_reg_deg2_fold1.png  used on input line 293.
+(pdftex.def)             Requested size: 469.75502pt x 313.17216pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../plots/poly_reg_deg3_fold1.png, id=30, 867.24pt x 578.16pt>
+File: ../plots/poly_reg_deg3_fold1.png Graphic file (type png)
+<use ../plots/poly_reg_deg3_fold1.png>
+Package pdftex.def Info: ../plots/poly_reg_deg3_fold1.png  used on input line 299.
+(pdftex.def)             Requested size: 469.75502pt x 313.17216pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../plots/poly_reg_deg4_fold1.png, id=31, 867.24pt x 578.16pt>
+File: ../plots/poly_reg_deg4_fold1.png Graphic file (type png)
+<use ../plots/poly_reg_deg4_fold1.png>
+Package pdftex.def Info: ../plots/poly_reg_deg4_fold1.png  used on input line 305.
+(pdftex.def)             Requested size: 469.75502pt x 313.17216pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../plots/poly_reg_deg5_fold1.png, id=32, 867.24pt x 578.16pt>
+File: ../plots/poly_reg_deg5_fold1.png Graphic file (type png)
+<use ../plots/poly_reg_deg5_fold1.png>
+Package pdftex.def Info: ../plots/poly_reg_deg5_fold1.png  used on input line 311.
+(pdftex.def)             Requested size: 469.75502pt x 313.17216pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../plots/mse_vs_complexity.png, id=33, 722.7pt x 433.62pt>
+File: ../plots/mse_vs_complexity.png Graphic file (type png)
+<use ../plots/mse_vs_complexity.png>
+Package pdftex.def Info: ../plots/mse_vs_complexity.png  used on input line 317.
+(pdftex.def)             Requested size: 469.75502pt x 281.85628pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../plots/crossvalmse_vs_loglambda.png, id=34, 578.16pt x 433.62pt>
+File: ../plots/crossvalmse_vs_loglambda.png Graphic file (type png)
+<use ../plots/crossvalmse_vs_loglambda.png>
+Package pdftex.def Info: ../plots/crossvalmse_vs_loglambda.png  used on input line 323.
+(pdftex.def)             Requested size: 469.75502pt x 352.31538pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[6 <../outputs/q1.png>]
+
+[7 <../plots/poly_reg_deg1_fold1.png>]
+
+[8 <../plots/poly_reg_deg2_fold1.png>]
+
+[9 <../plots/poly_reg_deg3_fold1.png>]
+
+[10 <../plots/poly_reg_deg4_fold1.png>]
+
+[11 <../plots/poly_reg_deg5_fold1.png>]
+
+[12 <../plots/mse_vs_complexity.png>]
+
+[13 <../plots/crossvalmse_vs_loglambda.png>]
+
+[14
+
+]
+
+[15]
+
+[16]
+
+[17]
+<../outputs/q2.png, id=83, 529.98pt x 161.10187pt>
+File: ../outputs/q2.png Graphic file (type png)
+<use ../outputs/q2.png>
+Package pdftex.def Info: ../outputs/q2.png  used on input line 527.
+(pdftex.def)             Requested size: 352.31625pt x 107.09697pt.
+
+
+[18 <../outputs/q2.png>]
+<../plots/q2_pred_vs_actual.png, id=90, 462.528pt x 346.896pt>
+File: ../plots/q2_pred_vs_actual.png Graphic file (type png)
+<use ../plots/q2_pred_vs_actual.png>
+Package pdftex.def Info: ../plots/q2_pred_vs_actual.png  used on input line 557.
+(pdftex.def)             Requested size: 469.75502pt x 352.33655pt.
+<../plots/q2_model_weights.png, id=91, 958.3002pt x 346.896pt>
+File: ../plots/q2_model_weights.png Graphic file (type png)
+<use ../plots/q2_model_weights.png>
+Package pdftex.def Info: ../plots/q2_model_weights.png  used on input line 564.
+(pdftex.def)             Requested size: 469.75502pt x 170.04933pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../plots/q2_crossvalmse_vs_loglambda.png, id=92, 578.16pt x 433.62pt>
+File: ../plots/q2_crossvalmse_vs_loglambda.png Graphic file (type png)
+<use ../plots/q2_crossvalmse_vs_loglambda.png>
+Package pdftex.def Info: ../plots/q2_crossvalmse_vs_loglambda.png  used on input line 572.
+(pdftex.def)             Requested size: 469.75502pt x 352.31538pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[19 <../plots/q2_pred_vs_actual.png>]
+
+[20 <../plots/q2_model_weights.png> <../plots/q2_crossvalmse_vs_loglambda.png>] (lotito_ece469hw2.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 26843 strings out of 473899
- 664482 string characters out of 5726501
- 2229960 words of memory out of 5000000
- 49295 multiletter control sequences out of 15000+600000
- 565063 words of font info for 62 fonts, out of 8000000 for 9000
+ 27001 strings out of 473899
+ 668340 string characters out of 5726501
+ 2281960 words of memory out of 5000000
+ 49455 multiletter control sequences out of 15000+600000
+ 566868 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,795b,2037s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\cloti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1095.pk><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on lotito-ece469hw1.pdf (6 pages, 172729 bytes).
+ 99i,9n,107p,795b,1766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\cloti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1095.pk><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on lotito_ece469hw2.pdf (20 pages, 1660286 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 151 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

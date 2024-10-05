@@ -150,14 +150,16 @@ print(f"Best Polynomial Degree: {best_degree}")
 
 # plot the mse v. polynomial degree
 plt.figure(figsize=(10,6))
-plt.plot([1,2,3,4,5], mse_per_degree, marker='o', color='b', label='Cross-Validation MSE')
+plt.plot([1,2,3,4,5], mse_per_degree, marker='o', color='b', label='Cross-Validation MSE', alpha=0.75)
+plt.plot(deg, mse_train_arr, label='Training MSE', marker='+', alpha=0.75)
+plt.plot(deg, mse_test_arr, label='Testing MSE', marker='x', alpha=0.75)
 plt.title("MSE vs Model Complexity")
 plt.xlabel('Polynomial Degree')
 plt.ylabel('Mean Squared Error (MSE)')
 plt.xticks(range(1, max_degree + 1))
 plt.legend()
 plt.grid(True)
-plt.savefig('mse_vs_complexity.png', dpi=300)
+plt.savefig('plots\\mse_vs_complexity.png', dpi=300)
 plt.close()
 
 

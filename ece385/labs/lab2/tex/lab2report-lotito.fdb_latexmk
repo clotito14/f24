@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex lab2report-lotito"] 1727039606.1976 "lab2report-lotito.aux" "lab2report-lotito.bbl" "lab2report-lotito" 1727039608.07706 0
+["bibtex lab2report-lotito"] 1727039606.1976 "lab2report-lotito.aux" "lab2report-lotito.bbl" "lab2report-lotito" 1728164105.15948 0
   "./bib.bib" 1726188331 473 308227182684b5e36f5085280c122099 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "lab2report-lotito.aux" 1727039607 2880 c9373adf0a01615a4613e8364c209139 "pdflatex"
+  "lab2report-lotito.aux" 1728164104 2880 c9373adf0a01615a4613e8364c209139 "pdflatex"
   (generated)
   "lab2report-lotito.bbl"
   "lab2report-lotito.blg"
   (rewritten before read)
-["pdflatex"] 1727039606.54431 "c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece385/labs/lab2/tex/lab2report-lotito.tex" "lab2report-lotito.pdf" "lab2report-lotito" 1727039608.07748 0
-  "C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727032241 124346 55158e4ffab625ef9c37e66c4ee22ffe ""
+["pdflatex"] 1728164103.32947 "c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece385/labs/lab2/tex/lab2report-lotito.tex" "lab2report-lotito.pdf" "lab2report-lotito" 1728164105.15992 0
+  "C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727046145 124346 55158e4ffab625ef9c37e66c4ee22ffe ""
   "C:/Users/cloti/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725825537 24265332 41c70381e0e4bdfa5ae1fcd4b6cb1b17 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1720345908 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -199,7 +199,7 @@
   "images/eq-ckt.png" 1727038970 12149 b03791b3975524015a75f5ebeb0533f3 ""
   "images/mag-current-plot.png" 1727035117 26029 526185377700f254cb292a6784986cfd ""
   "images/vi-plot.png" 1727024992 25772 b78c6ca8ffa1552194e0868a3dba5b37 ""
-  "lab2report-lotito.aux" 1727039607 2880 c9373adf0a01615a4613e8364c209139 "pdflatex"
+  "lab2report-lotito.aux" 1728164104 2880 c9373adf0a01615a4613e8364c209139 "pdflatex"
   "lab2report-lotito.bbl" 1727039606 1191 ad1da37f9422f679f6f6ce906f87f4bd "bibtex lab2report-lotito"
   "lab2report-lotito.tex" 1727039604 9838 c24f0d281f208fdbefd05e6f40e6d7f5 ""
   (generated)
