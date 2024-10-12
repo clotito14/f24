@@ -1,0 +1,59 @@
+\documentclass[11pt,a4paper,sans]{moderncv} % Document class
+
+% ModernCV themes
+\moderncvstyle{classic} % Style options: casual, classic, banking, fancy
+\moderncvcolor{blue}    % Color options: blue, orange, green, red, purple, grey, black
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+
+% Adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% Personal info
+\name{John}{Doe}
+\title{Curriculum Vitae} % Optional, remove the line if not wanted
+\address{123 Main Street}{City, State 12345} % Optional, remove the line if not wanted
+\phone[mobile]{+1~(123)~456~7890} % Optional, remove the line if not wanted
+\email{john.doe@email.com} % Optional, remove the line if not wanted
+\social[linkedin]{linkedin.com/in/johndoe} % Optional, you can add social profiles
+
+%----------------------------------------------------------------------------------
+%            CONTENT
+%----------------------------------------------------------------------------------
+\begin{document}
+
+% Print the title
+\makecvtitle
+
+% Section: Experience
+\section{Experience}
+\cventry{2020--Present}{Software Engineer}{Tech Company}{City, State}{}{
+\begin{itemize}
+    \item Designed and developed web applications using Python and Django.
+    \item Collaborated with cross-functional teams to define project scope and deliver features.
+    \item Improved application performance, reducing load times by 15\%.
+\end{itemize}}
+
+\cventry{2018--2020}{Junior Developer}{Another Tech Company}{City, State}{}{
+\begin{itemize}
+    \item Contributed to backend services using Java and Spring Boot.
+    \item Wrote unit tests and improved test coverage by 20\%.
+\end{itemize}}
+
+% Section: Education
+\section{Education}
+\cventry{2016--2020}{Bachelor of Science in Computer Science}{University Name}{City, State}{GPA: 3.8}{} % You can also add additional details like honors or awards
+
+% Section: Skills
+\section{Skills}
+\cvitem{Programming Languages}{Python, C++, Java, JavaScript}
+\cvitem{Technologies}{Docker, Kubernetes, AWS, Git, Jenkins}
+\cvitem{Frameworks}{Django, Flask, React}
+
+% Section: Projects
+\section{Projects}
+\cvitem{Project Name}{A description of a project where you contributed to building a machine learning model for classifying images using PyTorch.}
+\cvitem{Another Project}{Developed a full-stack web application with user authentication and real-time notifications.}
+
+\end{document}
