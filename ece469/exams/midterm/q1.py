@@ -142,9 +142,7 @@ print('\nCORRELATION of ______ TO median_house_value\n--------------------------
 print(corr_to_median_house_val)
 
 
-# (g) Use scatter matrix (i.e., scatter_matrix() method) to plot every numerical 
-#     attribute against every other numerical attribute, plus a histogram of each 
-#     numerical attribute’s values on the main diagonal.
+# (g) 
 pd.plotting.scatter_matrix(housing, alpha=0.2, figsize=(20,16))
 plt.suptitle('Scatter Matrix for $housing.csv$')
 plt.tight_layout()
@@ -152,10 +150,8 @@ plt.tight_layout()
 plt.close()
 
 
-# (i) Use the above preprocessed data-set to train a linear regression model to 
-#     predict ”median house value”. Plot the training and test errors against the 
-#     data-set size. Justify your results as much as possible.
-
+# (i)
+ 
 # initalize linear model
 linear_regressor = LinearRegression()
 
