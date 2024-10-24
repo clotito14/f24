@@ -1,5 +1,5 @@
 """
-Southern Illinois University Carbonale
+Southern Illinois University Carbondale
 Department of Electrical Engineering
 --------------------------------------
 ECE469: Intro to Machine Learning
@@ -16,11 +16,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from sklearn.datasets import fetch_openml
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import root_mean_squared_error, accuracy_score, f1_score
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from scipy.ndimage import shift
 
 from sklearn.decomposition import PCA
@@ -36,8 +37,6 @@ y = mnist['target']
 # first convert them to integers
 y = y.astype(int)
 
-
-
 # (b) Write a function that can shift an MNIST image
 #     in any direction. Do this in all directions for 
 #     the training set, and append them to it.
@@ -47,91 +46,58 @@ def quad_direction_enricher(X: np.array, y: np.array, size: int, px: int):
     the original set shifted in all directions px.
     (up, down, left, right)
     """
-    temp = []
+    enriched_X = []
     y_temp = []
     for k in range(0, 4, 1):
         for i in range(0, size, 1):
-            img = X[i].reshape(28,28)
-            
+            img = X[i].reshape(28,28)  # make image 28x28 matrix
+
+            # image shifting logic
             if (k == 0):
-                img = shift(img, (px, 0))  # shift up
+                img = shift(img, [px, 0])  # shift up
             elif (k == 1):
-                img = shift(img, (-px, 0)) # shift down
+                img = shift(img, [-px, 0]) # shift down
             elif (k == 2):
-                img = shift(img, (0, px))  # shift right
+                img = shift(img, [0, px])  # shift right
             elif (k == 3): 
-                img = shift(img, (0, -px)) # shift left
+                img = shift(img, [0, -px]) # shift left
             else:
                 print('ERROR: image shift bounds error')
 
-            temp.append(img)
+            img = img.flatten()     # make image 1D array
+            enriched_X.append(img)
             y_temp.append(y[i])
 
     #enriched_X = np.array([img.flatten() for img in temp])
-    enriched_X = np.array([img.flatten() for img in temp])
     enriched_Y = np.array(y_temp)
-    return enriched_X, enriched_Y
+    return np.array(enriched_X), enriched_Y
 
-# enrich X
-X, y = quad_direction_enricher(X, y, len(X), px=1)
+# enrich X and y
+e_X, e_y = quad_direction_enricher(X, y, len(X), px=1)
 
-print(f'len(X) = {len(X)}, len(y) = {len(y)}')
+X = np.concatenate([X, e_X])
+y = np.concatenate([y, e_y])
 
-subset_size = 30000
-# plot the examples of elements in the enriched dataset
-#ax1 = plt.subplot(2, 4, 1)
-#ax1.imshow(X[1].reshape(28,28))
-#plt.title('Original NMIST')
-#ax2 = plt.subplot(2, 4, 2)
-#ax2.imshow(X[2].reshape(28,28))
-#ax3 = plt.subplot(2, 4, 3)
-#ax3.imshow(X[3].reshape(28,28))
-#ax4 = plt.subplot(2, 4, 4)
-#ax4.imshow(X[4].reshape(28,28))
-#ax5 = plt.subplot(2, 4, 5)
-#ax5.imshow(X[subset_size - 1].reshape(28,28))
-#plt.title('Shifted NMIST', loc='center')
-#ax6 = plt.subplot(2, 4, 6)
-#ax6.imshow(X[2*subset_size - 2].reshape(28,28))
-#ax7 = plt.subplot(2, 4, 7)
-#ax7.imshow(X[3*subset_size - 3].reshape(28,28))
-#ax8 = plt.subplot(2, 4, 8)
-#ax8.imshow(X[4*subset_size - 4].reshape(28,28))
-#plt.suptitle('Example Elements of Enriched MNIST')
-#plt.show()
-#plt.close()
+
+# scale down size of dataset
+factor = 1
+subset_size = 70000*factor 
+X = X[:subset_size]
+y = y[:subset_size]
 
 # split dataset into training and testing sets
 test_ratio = 0.2
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=test_ratio, random_state=42)
 
-
-# scale down size of dataset
-test_size = int(subset_size*test_ratio)
-train_size = int(subset_size*(1-test_ratio))
-X_train = X_train[:train_size]
-X_test = X_test[:test_size]
-y_train = y_train[:train_size]
-y_test = y_test[:test_size]
-
 # next we want to standardize our data, but not
 # targets, as to preserve y\in(0,9)
-standard = StandardScaler()
-X_train = np.array(X_train).reshape(len(X_train), -1)
-X_test = np.array(X_test).reshape(len(X_test), -1)
-X_train = standard.fit_transform(X_train)
-X_test = standard.transform(X_test)
+minmax = MinMaxScaler()
+X_train = minmax.fit_transform(X_train)
+X_test = minmax.transform(X_test)
 
 # train logisitic regression classifier
 
-pca = PCA(n_components=0.95)
-X_train_pca = pca.fit_transform(X_train)
-X_test_pca = pca.transform(X_test)
-X_train = X_train_pca
-X_test = X_test_pca
-
-tolerance = 1e-3
-classify = LogisticRegression(solver='lbfgs', penalty='l2', C=2, max_iter=1000, random_state=0)
+classify = LogisticRegression(multi_class='multinomial', solver='lbfgs', C=0.1, max_iter=1000, random_state=42)
 classify.fit(X_train, y_train)
 
 # predict using model
@@ -153,8 +119,7 @@ train_f1 = f1_score(y_train, y_train_pred, average='macro')
 print('MNIST CLASSIFICATION REPORT')
 print('###########################')
 print(f'Dataset Size : {subset_size}')
-print(f'Enriched Size : {len(X)}')
-print(f'Probabilistic Model Tolerance     : {tolerance*100}%')
+print(f'Probabilistic Model Tolerance     : {0.01}%')
 print(f'Probabilistic Test      RMSE      : {test_rmse:.2f}')
 print(f'Probabilistic Test  Accuracy      : {test_accuracy:.2f}%')
 print(f'Probabilistic Test  F1 Score      : {test_f1:.2f}')
@@ -167,7 +132,8 @@ print(f'Probabilistic Train F1 Score      : {train_f1:.2f}')
 #     digits (0-9) in MNIST data-set.
 
 # initialize the knn classifier
-knn = KNeighborsClassifier(n_neighbors=5, metric='minkowski')
+n=3
+knn = KNeighborsClassifier(n_neighbors=n, metric='minkowski')
 
 # train knn classifier
 knn.fit(X_train, y_train)
@@ -188,10 +154,24 @@ train_accuracy_knn = accuracy_score(y_train, y_train_pred_knn) * 100
 test_f1_knn = f1_score(y_test, y_test_pred_knn, average='macro')
 train_f1_knn = f1_score(y_train, y_train_pred_knn, average='macro')
 
-# add KNN model results to classification report
+# add KNN model results to finish classification report
 print(f'Non-probabilistic Test      RMSE  : {test_rmse_knn:.2f}')
 print(f'Non-probabilistic Test  Accuracy  : {test_accuracy_knn:.2f}%')
 print(f'Non-probabilistic Test  F1 Score  : {test_f1_knn:.2f}')
 print(f'Non-probabilistic Train     RMSE  : {train_rmse_knn:.2f}')
 print(f'Non-probabilistic Train Accuracy  : {train_accuracy_knn:.2f}%')
 print(f'Non-probabilistic Train F1 Score  : {train_f1_knn:.2f}')
+
+
+# (D) Confusion Matrix
+prob_cmatrix = confusion_matrix(y_pred=y_test_pred, y_true=y_test)
+ConfusionMatrixDisplay(confusion_matrix=prob_cmatrix).plot(cmap='Blues')
+plt.title('Confusion Matrix: Probabilistic Model')
+plt.show()
+plt.close()
+
+nonprob_cmatrix = confusion_matrix(y_pred=y_test_pred_knn, y_true=y_test)
+ConfusionMatrixDisplay(confusion_matrix=nonprob_cmatrix).plot(cmap='Reds')
+plt.title('Confusion Matrix: Non-Probabilistic Model')
+plt.show()
+plt.close()
