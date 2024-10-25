@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1729651946.70242 "c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/exams/midterm/tex/lotito_469_midterm.tex" "lotito_469_midterm.pdf" "lotito_469_midterm" 1729651950.00846 0
+["pdflatex"] 1729740913.05087 "c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/exams/midterm/tex/lotito_469_midterm.tex" "lotito_469_midterm.pdf" "lotito_469_midterm" 1729740917.65973 0
   "../logs/housing_corr.png" 1729641454 72941 9e05fe28ce1cfb6a48c11557cafb5a3a ""
   "../logs/housing_desc.png" 1729549603 161176 a490919b32784bd4c7ab9081a9793d98 ""
   "../logs/housing_info.png" 1729549603 120749 fb7d39799bdc1a4cd99fb27bfbb4221f ""
@@ -200,9 +200,9 @@
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty" 1718356376 3468 ad69b54642e68f9fdf39ec1a16dd7341 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/exams/midterm/tex/lotito_469_midterm.tex" 1729651946 8997 b07d2a574c8bbfea82a4f36f8742f23d ""
-  "lotito_469_midterm.aux" 1729651949 2079 18153d7cfe9888ae015a96e86d7a7907 "pdflatex"
-  "lotito_469_midterm.tex" 1729651946 8997 b07d2a574c8bbfea82a4f36f8742f23d ""
+  "c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/exams/midterm/tex/lotito_469_midterm.tex" 1729740911 8985 807aabdf6284712ab454f0d68e5ec389 ""
+  "lotito_469_midterm.aux" 1729740917 2079 18153d7cfe9888ae015a96e86d7a7907 "pdflatex"
+  "lotito_469_midterm.tex" 1729740911 8985 807aabdf6284712ab454f0d68e5ec389 ""
   (generated)
   "lotito_469_midterm.aux"
   "lotito_469_midterm.log"

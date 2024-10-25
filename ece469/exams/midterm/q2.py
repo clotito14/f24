@@ -38,11 +38,11 @@ y = mnist['target']
 y = y.astype(int)
 
 # (b) Write a function that can shift an MNIST image
-#     in any direction. Do this in all directions for 
+#     in any direction. Do this in all directions for
 #     the training set, and append them to it.
 def quad_direction_enricher(X: np.array, y: np.array, size: int, px: int):
     """
-    To enrich an image dataset with 4 sets of 
+    To enrich an image dataset with 4 sets of
     the original set shifted in all directions px.
     (up, down, left, right)
     """
@@ -59,7 +59,7 @@ def quad_direction_enricher(X: np.array, y: np.array, size: int, px: int):
                 img = shift(img, [-px, 0]) # shift down
             elif (k == 2):
                 img = shift(img, [0, px])  # shift right
-            elif (k == 3): 
+            elif (k == 3):
                 img = shift(img, [0, -px]) # shift left
             else:
                 print('ERROR: image shift bounds error')
@@ -81,7 +81,7 @@ y = np.concatenate([y, e_y])
 
 # scale down size of dataset
 factor = 1
-subset_size = 70000*factor 
+subset_size = 70000*factor
 X = X[:subset_size]
 y = y[:subset_size]
 
@@ -127,8 +127,8 @@ print(f'Probabilistic Train     RMSE      : {train_rmse:.2f}')
 print(f'Probabilistic Train Accuracy      : {train_accuracy:.2f}%')
 print(f'Probabilistic Train F1 Score      : {train_f1:.2f}')
 
-# (c) KNN-based algorithms belong to the class of non-probabilistic classifiers. 
-#     You are asked to design a KNN-based classifier to classify handwritten 
+# (c) KNN-based algorithms belong to the class of non-probabilistic classifiers.
+#     You are asked to design a KNN-based classifier to classify handwritten
 #     digits (0-9) in MNIST data-set.
 
 # initialize the knn classifier
