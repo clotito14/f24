@@ -1,48 +1,58 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: lab5report-lotito.aux
-I found no \citation commands---while reading file lab5report-lotito.aux
-I found no \bibdata command---while reading file lab5report-lotito.aux
-I found no \bibstyle command---while reading file lab5report-lotito.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            83 strings with 508 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: bib.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 2 entries,
+            4087 wiz_defined-function locations,
+            832 strings with 7522 characters,
+and the built_in function-call counts, 892 in all, are:
+= -- 70
+> -- 8
 < -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 4
+- -- 2
+* -- 45
+:= -- 181
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 2
+duplicate$ -- 69
+empty$ -- 71
+format.name$ -- 2
+if$ -- 175
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
+int.to.str$ -- 2
+missing$ -- 17
+newline$ -- 29
+num.names$ -- 2
+pop$ -- 38
+preamble$ -- 1
 purify$ -- 0
-quote$ -- 0
-skip$ -- 0
+quote$ -- 2
+skip$ -- 62
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 4
+swap$ -- 45
 text.length$ -- 0
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
+top$ -- 5
+type$ -- 2
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+while$ -- 2
+width$ -- 3
+write$ -- 40
