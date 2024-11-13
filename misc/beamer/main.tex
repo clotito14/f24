@@ -1,0 +1,37 @@
+\documentclass{beamer}
+
+\usetheme{copenhagen}
+\definecolor{maroon}{RGB}{102,0,204}
+\setbeamercolor{structure}{fg=maroon}
+
+\title{Vectors on Manifolds}
+\author{Chase Lotito}
+\institute{Southern Illinois University Carbondale}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{What is a tangent vector?}
+
+    \textbf{DEF}: A tangent vector at a point \(p\in M\) is a map from smooth functions on your manifold to scalars,
+
+    \begin{equation}
+        v_p : \mathcal{F}M \to \mathbb{R}
+    \end{equation}
+
+    such that, for \(f\), \(g \in \mathcal{F}M\) and \(c \in \mathbb{R}\):
+
+    \begin{enumerate}
+        \item \(v_p(f+g)=v_p(f)+v_p(g)\)
+        \item \(v_p(cf)=cv_p(f)\)
+        \item \(v_p(fg)=v_p(f)g(p)+f(p)v_p(g)\)
+    \end{enumerate}
+
+
+
+\end{frame}
+
+\end{document}
