@@ -1,0 +1,27 @@
+%{
+==========================================
+Homework 3 Question 2 Code
+Name       : Chase Lotito
+University : Southern Illinois University
+Course     : ECE469
+==========================================
+Description:
+Training a SVM classifiers using a custom 
+Kernel (Sigmoid kernel) based on MATLAB
+==========================================
+%}
+
+% (A) GENERATE RANDOM SET OF POINTS IN UNIT CIRCLE.
+%     Q1 AND Q3 POINTS POSITIVE CLASS.
+%     Q2 AND Q4 POINTS NEGATIVE CLASS.
+
+rng(1);
+n = 100;
+
+r1 = sqrt(rand(2*n,1));
+t1 = [pi/2*rand(n,1) ; (pi/2*rand(n,1)+pi)];
+X1 = [r1.*cos(t1) r1.*sin(t1)];
+
+r2 = sqrt(rand(2*n,1));
+t2 = [pi/2*rand(n,1) ; (pi/2*rand(n,1)+pi)];
+X2 = [r1.*cos(t1) r1.*sin(t1)];
