@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}			% Use this package to include images
+\usepackage{amsmath}			% A library of many standard math expressions
+\usepackage{amsfonts}
+\usepackage[margin=1in]{geometry}% Sets 1in margins.
+\usepackage{fancyhdr}			% Creates headers and footers
+\usepackage{enumerate}          %These two package give custom labels to a list
+\usepackage[shortlabels]{enumitem}
+\usepackage{braket}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{geometry}
+
+%% LISTINGS CONFIG %%
+
+\definecolor{purple2}{RGB}{153,0,153} % there's actually no standard purple
+\definecolor{green2}{RGB}{0,153,0} % a darker green
+
+\renewcommand{\lstlistingname}{Code}
+
+% Define MATLAB style
+\lstset{
+    language=Matlab,
+    basicstyle=\ttfamily\small, % Font size and typewriter style
+    keywordstyle=\color{blue}\bfseries, % Keywords in bold blue
+    commentstyle=\color{green!60!black}\itshape, % Comments in italic green
+    stringstyle=\color{red}, % Strings in red
+    numbers=left, % Line numbers on the left
+    numberstyle=\tiny\color{gray}, % Line number style
+    stepnumber=1, % Line number increment
+    numbersep=5pt, % Distance of line numbers from code
+    backgroundcolor=\color{gray!10}, % Light gray background
+    frame=single, % Box around the code
+    rulecolor=\color{black}, % Frame color
+    tabsize=4, % Tab size
+    showspaces=false, % Do not show spaces as visible characters
+    showstringspaces=false, % Do not show spaces in strings
+    breaklines=true, % Automatic line breaking
+    captionpos=b, % Caption at the bottom
+}
+
+\title{\textbf{ECE469 Homework 3}}
+\author{Chase A. Lotito}
+\date{\today}
+
+\begin{document} %The writing for your homework should all come after this.
+
+\maketitle
+
+% QUESTION 1
+\section*{Question 1}
+
+Train SVM classifiers using a Gaussian Kernel based on MATLAB.
+
+\smallskip
+\textbf{Solution.}
+
+% code from q1.m
+\lstinputlisting[caption={q1.m}, label={code:q1}]{../q1/q1.m}
+
+Code \ref{code:q1} utilizes a user-defined function to implement the Gaussian Kernel which can be referenced in Code \ref{code:mysigmoid}.
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q1/data1_data2_visualization.png}
+  \label{fig:q1_data_visual}
+\end{figure}
+
+
+
+\clearpage
+% QUESTION 2
+\section*{Question 2}
+
+\textbf{Solution.}
+
+% code from q2.m
+\lstinputlisting[caption={q2.m}, label={code:q2}]{../q2/q2.m}
+
+
+
+\clearpage
+% QUESTION 3
+\section*{Question 3}
+
+\textbf{Solution.}
+
+% code from q3.m
+\lstinputlisting[caption={q3.m}, label={code:q3}]{../q3/q3.m}
+
+
+
+\clearpage
+% QUESTION 4
+\section*{Question 4}
+
+\textbf{Solution.}
+
+% code from q4.m
+\lstinputlisting[caption={q4.m}, label={code:q4}]{../q4/q4.m}
+
+
+
+\clearpage
+% QUESTION 5
+\section*{Question 5}
+
+\textbf{Solution.}
+
+% code from q5.m
+\lstinputlisting[caption={q5.m}, label={code:q5}]{../q5/q5.m}
+
+
+
+
+
+
+
+
+
+
+% APPENDIX
+\clearpage
+\section*{APPENDIX A: Auxillary Code}
+
+The following codes was used to implement the Gaussian Kernel for Support Vector Machines (SVM).
+
+\lstinputlisting[caption={mysigmoid.m}, label={code:mysigmoid}]{../q2/mysigmoid.m}
+
+
+\lstinputlisting[caption={mysigmoid\_2.m}, label={code:mysigmoid2}]{../q2/mysigmoid_2.m}
+
+\end{document}
