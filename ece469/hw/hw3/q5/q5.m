@@ -46,3 +46,14 @@ disp('MANUAL:');
 disp(V_sort);
 disp('BUILT-IN:');
 disp(Mat_pc);
+
+% Run PCA on the input matrix X
+X = [ 2 4 5 5 3 2 ; 2 3 4 5 4 3 ];
+k = 1;
+n = 6;
+d = 2;
+
+pcaX = pca(X);
+
+disp('pca(X)');
+disp(pcaX);

@@ -1,25 +1,25 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.4)  4 DEC 2024 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.9)  4 DEC 2024 21:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/hw/hw3/tex/lotito_ece469hw3.tex
 (c:/Users/cloti/OneDrive/Desktop/SCHOOL/SIUC/f24/ece469/hw/hw3/tex/lotito_ece469hw3.tex
-LaTeX2e <2024-11-01>
-L3 programming layer <2024-10-09>
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
 (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+File: size11.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count196
-\c@section=\count197
-\c@subsection=\count198
-\c@subsubsection=\count199
-\c@paragraph=\count266
-\c@subparagraph=\count267
-\c@figure=\count268
-\c@table=\count269
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
@@ -29,7 +29,7 @@ Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
@@ -42,7 +42,7 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \Gin@req@height=\dimen142
 \Gin@req@width=\dimen143
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2024/10/30 v2.17s AMS math features
+Package: amsmath 2024/05/23 v2.17q AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
@@ -58,40 +58,40 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count270
+\inf@bad=\count268
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count271
-\leftroot@=\count272
+\uproot@=\count269
+\leftroot@=\count270
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count273
-\DOTSCASE@=\count274
-LaTeX Info: Redefining \ldots on input line 502.
-LaTeX Info: Redefining \dots on input line 505.
-LaTeX Info: Redefining \cdots on input line 638.
+\classnum@=\count271
+\DOTSCASE@=\count272
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
 \Mathstrutbox@=\box52
 \strutbox@=\box53
-LaTeX Info: Redefining \big on input line 740.
-LaTeX Info: Redefining \Big on input line 741.
-LaTeX Info: Redefining \bigg on input line 742.
-LaTeX Info: Redefining \Bigg on input line 743.
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen146
-LaTeX Font Info:    Redeclaring font encoding OML on input line 761.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 762.
-\macc@depth=\count275
-LaTeX Info: Redefining \bmod on input line 923.
-LaTeX Info: Redefining \pmod on input line 928.
-LaTeX Info: Redefining \smash on input line 958.
-LaTeX Info: Redefining \relbar on input line 988.
-LaTeX Info: Redefining \Relbar on input line 989.
-\c@MaxMatrixCols=\count276
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count273
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count274
 \dotsspace@=\muskip17
-\c@parentequation=\count277
-\dspbrk@lvl=\count278
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
 \tag@help=\toks19
-\row@=\count279
-\column@=\count280
-\maxfields@=\count281
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
 \andhelp@=\toks20
 \eqnshift@=\dimen147
 \alignsep@=\dimen148
@@ -103,8 +103,8 @@ LaTeX Info: Redefining \Relbar on input line 989.
 \multlinegap=\skip52
 \multlinetaggap=\skip53
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2972.
-LaTeX Info: Redefining \] on input line 2973.
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -119,9 +119,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count282
-\Gm@cntv=\count283
-\c@Gm@tempcnt=\count284
+\Gm@cnth=\count280
+\Gm@cntv=\count281
+\c@Gm@tempcnt=\count282
 \Gm@bindingoffset=\dimen153
 \Gm@wd@mp=\dimen154
 \Gm@odd@mp=\dimen155
@@ -151,18 +151,18 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen161
 \enit@toks=\toks25
 \enit@inbox=\box54
-\enit@count@id=\count285
-\enitdp@description=\count286
+\enit@count@id=\count283
+\enitdp@description=\count284
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/braket\braket.sty) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
 Package: physics 
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2024-10-09 L3 programming layer (loader) 
+Package: expl3 2024-07-20 L3 programming layer (loader) 
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count287
+\l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box55
 ))
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2024-05-08 L3 Experimental document command parser
 )) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
@@ -195,14 +195,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen173
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count288
-\c@pgf@countb=\count289
-\c@pgf@countc=\count290
-\c@pgf@countd=\count291
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
 \t@pgf@toka=\toks30
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count292
+\pgf@sys@id@count=\count290
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -213,37 +213,37 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count293
-\pgfsyssoftpath@bigbuffer@items=\count294
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen174
-\pgfmath@count=\count295
+\pgfmath@count=\count293
 \pgfmath@box=\box57
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
 \pgfmath@stack@operation=\toks35
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count296
+\c@pgfmathroundto@lastzeros=\count294
 )) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen175
@@ -273,7 +273,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box58
 \pgf@hbox=\box59
 \pgf@layerbox@main=\box60
-\pgf@picture@serial@count=\count297
+\pgf@picture@serial@count=\count295
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen193
@@ -294,8 +294,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen198
-\pgf@sys@shading@range@num=\count298
-\pgf@shadingcount=\count299
+\pgf@sys@shading@range@num=\count296
+\pgf@shadingcount=\count297
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
@@ -330,7 +330,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count300
+\pgf@plot@mark@count=\count298
 \pgfplotmarksize=\dimen259
 )
 \tikz@lastx=\dimen260
@@ -345,17 +345,17 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box64
 \tikz@tempbox=\box65
 \tikz@tempbox@bg=\box66
-\tikztreelevel=\count301
-\tikznumberofchildren=\count302
-\tikznumberofcurrentchild=\count303
-\tikz@fig@count=\count304
+\tikztreelevel=\count299
+\tikznumberofchildren=\count300
+\tikznumberofcurrentchild=\count301
+\tikz@fig@count=\count302
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count305
-\pgfmatrixcurrentcolumn=\count306
-\pgf@matrix@numberofcolumns=\count307
+\pgfmatrixcurrentrow=\count303
+\pgfmatrixcurrentcolumn=\count304
+\pgf@matrix@numberofcolumns=\count305
 )
-\tikz@expandcount=\count308
+\tikz@expandcount=\count306
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
@@ -363,33 +363,33 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \t@pgfplots@tokb=\toks39
 \t@pgfplots@tokc=\toks40
 \pgfplots@tmpa=\dimen268
-\c@pgfplots@coordindex=\count309
-\c@pgfplots@scanlineindex=\count310
+\c@pgfplots@coordindex=\count307
+\c@pgfplots@scanlineindex=\count308
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks41
 \t@pgf@tokb=\toks42
 \t@pgf@tokc=\toks43
 (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count311
+\c@pgfplotsarray@tmp=\count309
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count312
+\c@pgfplotstable@counta=\count310
 \t@pgfplotstable@a=\toks44
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count313
+\c@pgfplotslibrarysurf@no=\count311
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen269
 \pgfdecoratedremainingdistance=\dimen270
 \pgfdecoratedinputsegmentcompleteddistance=\dimen271
 \pgfdecoratedinputsegmentremainingdistance=\dimen272
 \pgf@decorate@distancetomove=\dimen273
-\pgf@decorate@repeatstate=\count314
+\pgf@decorate@repeatstate=\count312
 \pgfdecorationsegmentamplitude=\dimen274
 \pgfdecorationsegmentlength=\dimen275
 )
 \tikz@lib@dec@box=\box67
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count315
+\pgfplots@numplots=\count313
 \pgfplots@xmin@reg=\dimen276
 \pgfplots@xmax@reg=\dimen277
 \pgfplots@ymin@reg=\dimen278
@@ -401,23 +401,23 @@ File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
-Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count316
-\calc@Bcount=\count317
+\calc@Acount=\count314
+\calc@Bcount=\count315
 \calc@Adimen=\dimen282
 \calc@Bdimen=\dimen283
 \calc@Askip=\skip64
 \calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count318
+\calc@Ccount=\count316
 \calc@Cskip=\skip66
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count319
+\g_MT_multlinerow_int=\count317
 \l_MT_multwidth_dim=\dimen284
 \origjot=\skip67
 \l_MT_shortvdotswithinadjustabove_dim=\dimen285
@@ -432,31 +432,31 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count320
+\lst@mode=\count318
 \lst@gtempboxa=\box69
 \lst@token=\toks45
-\lst@length=\count321
+\lst@length=\count319
 \lst@currlwidth=\dimen292
-\lst@column=\count322
-\lst@pos=\count323
+\lst@column=\count320
+\lst@pos=\count321
 \lst@lostspace=\dimen293
 \lst@width=\dimen294
-\lst@newlines=\count324
-\lst@lineno=\count325
+\lst@newlines=\count322
+\lst@lineno=\count323
 \lst@maxwidth=\dimen295
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count326
-\lst@skipnumbers=\count327
+File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
+\c@lstnumber=\count324
+\lst@skipnumbers=\count325
 \lst@framebox=\box70
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
+File: listings.cfg 2024/05/25 1.10b listings configuration
 ))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
+Package: listings 2024/05/25 1.10b (Carsten Heinz)
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
+File: lstlang1.sty 2024/05/25 1.10b listings language file
 ) (lotito_ece469hw3.aux)
 \openout1 = `lotito_ece469hw3.aux'.
 
@@ -476,16 +476,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count328
+\scratchcounter=\count326
 \scratchdimen=\dimen296
 \scratchbox=\box71
-\nofMPsegments=\count329
-\nofMParguments=\count330
+\nofMPsegments=\count327
+\nofMParguments=\count328
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count331
+\MPscratchCnt=\count329
 \MPscratchDim=\dimen297
-\MPnumerator=\count332
-\makeMPintoPDFobject=\count333
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
 \everyMPtoPDFconversion=\toks47
 ) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -531,7 +531,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
  on input line 52.
 
-\c@lstlisting=\count334
+\c@lstlisting=\count332
 LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
 (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -556,54 +556,221 @@ Package pdftex.def Info: ../q1/data1_data2_visualization.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<../q1/trained_svm_inf.png, id=16, 666.23906pt x 388.45125pt>
+File: ../q1/trained_svm_inf.png Graphic file (type png)
+<use ../q1/trained_svm_inf.png>
+Package pdftex.def Info: ../q1/trained_svm_inf.png  used on input line 78.
+(pdftex.def)             Requested size: 469.75502pt x 273.89372pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q1/trained_svm_1.png, id=17, 643.6547pt x 380.92313pt>
+File: ../q1/trained_svm_1.png Graphic file (type png)
+<use ../q1/trained_svm_1.png>
+Package pdftex.def Info: ../q1/trained_svm_1.png  used on input line 84.
+(pdftex.def)             Requested size: 469.75502pt x 278.01343pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 
 [2]
 
-[3 <../q1/data1_data2_visualization.png (PNG copy)>] (../q2/q2.m
+[3 <../q1/data1_data2_visualization.png (PNG copy)> <../q1/trained_svm_inf.png (PNG copy)>]
 
-[4
+[4 <../q1/trained_svm_1.png (PNG copy)>] (../q2/q2.m
+
+[5
 
 ])
+<../q2/scatter.png, id=31, 503.63156pt x 415.5525pt>
+File: ../q2/scatter.png Graphic file (type png)
+<use ../q2/scatter.png>
+Package pdftex.def Info: ../q2/scatter.png  used on input line 116.
+(pdftex.def)             Requested size: 469.75502pt x 387.60118pt.
 
-[5] (../q3/q3.m)
 
-[6
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q2/scatter_dbound.png, id=32, 700.86844pt x 560.0925pt>
+File: ../q2/scatter_dbound.png Graphic file (type png)
+<use ../q2/scatter_dbound.png>
+Package pdftex.def Info: ../q2/scatter_dbound.png  used on input line 122.
+(pdftex.def)             Requested size: 469.75502pt x 375.4053pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q2/scatter_dbound_model2.png, id=33, 746.03719pt x 601.4972pt>
+File: ../q2/scatter_dbound_model2.png Graphic file (type png)
+<use ../q2/scatter_dbound_model2.png>
+Package pdftex.def Info: ../q2/scatter_dbound_model2.png  used on input line 129.
+(pdftex.def)             Requested size: 469.75502pt x 378.74332pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q2/misclass_rates.png, id=34, 103.88812pt x 136.25906pt>
+File: ../q2/misclass_rates.png Graphic file (type png)
+<use ../q2/misclass_rates.png>
+Package pdftex.def Info: ../q2/misclass_rates.png  used on input line 136.
+(pdftex.def)             Requested size: 117.43875pt x 154.03746pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[6]
+
+[7 <../q2/scatter.png (PNG copy)>]
+
+[8 <../q2/scatter_dbound.png (PNG copy)>]
+
+[9 <../q2/scatter_dbound_model2.png (PNG copy)> <../q2/misclass_rates.png>] (../q3/q3.m)
+
+[10
 
 ] (../q4/q4.m
 
-[7
+[11
 
 ])
+<../q4/fisheriris_unclustered.png, id=57, 421.575pt x 316.18124pt>
+File: ../q4/fisheriris_unclustered.png Graphic file (type png)
+<use ../q4/fisheriris_unclustered.png>
+Package pdftex.def Info: ../q4/fisheriris_unclustered.png  used on input line 177.
+(pdftex.def)             Requested size: 352.31625pt x 264.23956pt.
+<../q4/fisheriris_clustered.png, id=58, 502.12593pt x 392.96812pt>
+File: ../q4/fisheriris_clustered.png Graphic file (type png)
+<use ../q4/fisheriris_clustered.png>
+Package pdftex.def Info: ../q4/fisheriris_clustered.png  used on input line 184.
+(pdftex.def)             Requested size: 352.31625pt x 275.74138pt.
 
-[8] (../q5/q5.m)
 
-[9
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q4/sepal_fisheriris_clustered.png, id=59, 577.40718pt x 475.02469pt>
+File: ../q4/sepal_fisheriris_clustered.png Graphic file (type png)
+<use ../q4/sepal_fisheriris_clustered.png>
+Package pdftex.def Info: ../q4/sepal_fisheriris_clustered.png  used on input line 191.
+(pdftex.def)             Requested size: 352.31625pt x 289.85886pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[12 <../q4/fisheriris_unclustered.png (PNG copy)>]
+
+[13 <../q4/fisheriris_clustered.png (PNG copy)> <../q4/sepal_fisheriris_clustered.png (PNG copy)>] (../q5/q5.m
+
+[14
+
+])
+<../q5/q5_log.png, id=70, 298.86656pt x 208.52907pt>
+File: ../q5/q5_log.png Graphic file (type png)
+<use ../q5/q5_log.png>
+Package pdftex.def Info: ../q5/q5_log.png  used on input line 211.
+(pdftex.def)             Requested size: 352.31625pt x 245.83942pt.
+
+
+[15 <../q5/q5_log.png>]
+<../q5/pcaX.png, id=75, 82.80937pt x 113.67468pt>
+File: ../q5/pcaX.png Graphic file (type png)
+<use ../q5/pcaX.png>
+Package pdftex.def Info: ../q5/pcaX.png  used on input line 219.
+(pdftex.def)             Requested size: 164.41711pt x 225.7322pt.
+
+
+[16
+
+ <../q5/pcaX.png>] (../q6/q6.m)
+<../q6/peppers.png, id=80, 516.42938pt x 359.09157pt>
+File: ../q6/peppers.png Graphic file (type png)
+<use ../q6/peppers.png>
+Package pdftex.def Info: ../q6/peppers.png  used on input line 236.
+(pdftex.def)             Requested size: 352.31625pt x 244.98448pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q6/peppers_gray.png, id=81, 516.42938pt x 359.09157pt>
+File: ../q6/peppers_gray.png Graphic file (type png)
+<use ../q6/peppers_gray.png>
+Package pdftex.def Info: ../q6/peppers_gray.png  used on input line 243.
+(pdftex.def)             Requested size: 352.31625pt x 244.98448pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q6/variances.png, id=82, 421.575pt x 316.18124pt>
+File: ../q6/variances.png Graphic file (type png)
+<use ../q6/variances.png>
+Package pdftex.def Info: ../q6/variances.png  used on input line 249.
+(pdftex.def)             Requested size: 352.31625pt x 264.23956pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q6/compressed_10.png, id=83, 647.41875pt x 429.10312pt>
+File: ../q6/compressed_10.png Graphic file (type png)
+<use ../q6/compressed_10.png>
+Package pdftex.def Info: ../q6/compressed_10.png  used on input line 256.
+(pdftex.def)             Requested size: 352.31625pt x 233.51282pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q6/compressed_300.png, id=84, 565.36218pt x 396.7322pt>
+File: ../q6/compressed_300.png Graphic file (type png)
+<use ../q6/compressed_300.png>
+Package pdftex.def Info: ../q6/compressed_300.png  used on input line 262.
+(pdftex.def)             Requested size: 352.31625pt x 247.23662pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../q6/compressed_477.png, id=85, 647.41875pt x 429.10312pt>
+File: ../q6/compressed_477.png Graphic file (type png)
+<use ../q6/compressed_477.png>
+Package pdftex.def Info: ../q6/compressed_477.png  used on input line 268.
+(pdftex.def)             Requested size: 352.31625pt x 233.51282pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[17
 
 ]
 
-[10] (../q2/mysigmoid.m) (../q2/mysigmoid_2.m)
+[18 <../q6/peppers.png (PNG copy)> <../q6/peppers_gray.png (PNG copy)>]
 
-[11
+[19 <../q6/variances.png (PNG copy)> <../q6/compressed_10.png (PNG copy)>]
+
+[20 <../q6/compressed_300.png (PNG copy)> <../q6/compressed_477.png (PNG copy)>] (../q7/q7.py
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 27.
+ (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+))
+
+[21
+
+] (../q2/mysigmoid.m) (../q2/mysigmoid_2.m)
+
+[22
 
 ] (lotito_ece469hw3.aux)
  ***********
-LaTeX2e <2024-11-01>
-L3 programming layer <2024-10-09>
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27382 strings out of 473702
- 670765 string characters out of 5719438
- 1706909 words of memory out of 5000000
- 50000 multiletter control sequences out of 15000+600000
- 565037 words of font info for 63 fonts, out of 8000000 for 9000
+ 27598 strings out of 473899
+ 676168 string characters out of 5726500
+ 2326960 words of memory out of 5000000
+ 50009 multiletter control sequences out of 15000+600000
+ 566918 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,107p,795b,2258s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on lotito_ece469hw3.pdf (11 pages, 181550 bytes).
+ 99i,7n,107p,795b,2258s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\cloti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1000.pk><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on lotito_ece469hw3.pdf (22 pages, 1256882 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 148 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

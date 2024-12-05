@@ -73,6 +73,32 @@ Code \ref{code:q1} utilizes a user-defined function to implement the Gaussian Ke
   \label{fig:q1_data_visual}
 \end{figure}
 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1.0\textwidth]{../q1/trained_svm_inf.png}
+  \label{fig:trained_svm_inf}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1.0\textwidth]{../q1/trained_svm_1.png}
+  \label{fig:trained_svm_1}
+\end{figure}
+
+
+For \(\texttt{BoxConstraint}=1\) the decision boundary is warped and we have more misclassifications. For \(\texttt{BoxConstraint}=\infty\), the decision boundary is nearly the unit circle, and there are barely any misclassifications.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \clearpage
@@ -83,6 +109,44 @@ Code \ref{code:q1} utilizes a user-defined function to implement the Gaussian Ke
 
 % code from q2.m
 \lstinputlisting[caption={q2.m}, label={code:q2}]{../q2/q2.m}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1.0\textwidth]{../q2/scatter.png}
+  \label{fig:scatter}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1.0\textwidth]{../q2/scatter_dbound.png}
+  \label{fig:scatter_gamma1}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1.0\textwidth]{../q2/scatter_dbound_model2.png}
+  \label{fig:scatter_gamma05}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.25\textwidth]{../q2/misclass_rates.png}
+  \label{fig:misclassrates}
+\end{figure}
+
+For Gaussian Kernel, \(\texttt{gamma}=1\) (Model 1) misclassification rate is 13.5\%, \(\texttt{gamma}=0.5\) (Model 2) misclassification rate is 4.5\%.
+
+
+
+
+
+
+
+
+
 
 
 
@@ -108,6 +172,30 @@ Code \ref{code:q1} utilizes a user-defined function to implement the Gaussian Ke
 
 
 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q4/fisheriris_unclustered.png}
+  \label{fig:fishunclust}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q4/fisheriris_clustered.png}
+  \label{fig:fishclust}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q4/sepal_fisheriris_clustered.png}
+  \label{fig:sepalclust}
+\end{figure}
+
+
+
+
+
 \clearpage
 % QUESTION 5
 \section*{Question 5}
@@ -118,12 +206,80 @@ Code \ref{code:q1} utilizes a user-defined function to implement the Gaussian Ke
 \lstinputlisting[caption={q5.m}, label={code:q5}]{../q5/q5.m}
 
 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q5/q5_log.png}
+  \label{fig:q5log}
+\end{figure}
+
+\clearpage
+(ii)
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.35\textwidth]{../q5/pcaX.png}
+  \label{fig:pcaX}
+\end{figure}
 
 
 
+\clearpage
+% QUESTION 6
+\section*{Question 6}
+
+\textbf{Solution.}
+
+% code from q6.m
+\lstinputlisting[caption={q6.m}, label={code:q6}]{../q6/q6.m}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q6/peppers.png}
+  \label{fig:pep}
+\end{figure}
 
 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q6/peppers_gray.png}
+  \label{fig:pepgray}
+\end{figure}
 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q6/variances.png}
+  \label{fig:var}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q6/compressed_10.png}
+  \label{fig:comp10}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q6/compressed_300.png}
+  \label{fig:comp300}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../q6/compressed_477.png}
+  \label{fig:comp477}
+\end{figure}
+
+The image quality for the compressed PCA images is very low, but for \(\texttt{PCs=477}\) you can see strong outlines of the peppers.
+
+
+\clearpage
+% QUESTION 7
+\section*{Question 7}
+
+\textbf{Solution.}
+
+% code from q7.py
+\lstinputlisting[caption={q7.py}, label={code:q7}]{../q7/q7.py}
 
 
 % APPENDIX

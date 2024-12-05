@@ -34,4 +34,17 @@ covX = cov(X);
 % D: eigenvalue diagonal matrix
 [V,D] = eig(covX);
 
-% sort the eigenvalues largest to 
+% sort the eigenvalues largest to smallest (noting location)
+[D_sort, idx] = sort(diag(D), 'descend');
+V_sort = V(:, idx);   % rearrange eigenvector matrix accordingly
+
+
+% (ii) use built-in MATLAB PCA function
+Mat_pc = pca(ingredients);
+
+disp('MANUAL:');
+disp(V_sort);
+disp('BUILT-IN:');
+disp(Mat_pc);
+
+% Run PCA on the 
